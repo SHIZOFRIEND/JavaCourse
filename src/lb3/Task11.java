@@ -37,7 +37,7 @@ public class Task11 {
         Course11 course = catalog.get(1);
 
         NavigableMap<Integer, List<Player>> leaderboard =
-                new TreeMap<>(Comparator.reverseOrder());
+                new TreeMap<>(Comparator.reverseOrder());//SortSet
 
         leaderboard.put(100, new ArrayList<>());
         leaderboard.get(100).add(new Player("Alex"));
