@@ -86,7 +86,6 @@ public class CourseTest {
                 IllegalArgumentException.class,
                 () -> new Course(101));}
 
-//Task10
     @ParameterizedTest(name = "normalizeCode({0}) = {1}")
     @CsvSource({
             "' java-101 ', JAVA-101",
@@ -153,7 +152,7 @@ public class CourseTest {
 
 
 
-//Task13
+//lb5.Task13
     static String enroll(
             String status,
             int places,

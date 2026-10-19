@@ -69,7 +69,7 @@ public class Task3 {
 
         for (CourseFormatter formatter : formatters) {
             System.out.println(formatter.format(course));
-            System.out.println("--------------------");
+
         }
     }
 }
