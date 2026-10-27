@@ -1,6 +1,6 @@
 package lb5;
 public class Task2 {
-    private static final int LINE_COUNT = 10_000;
+    private static final int LINE_COUNT = 10000;
 
     private static String buildWithPlus(int count) {
         String report = "";

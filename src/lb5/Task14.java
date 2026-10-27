@@ -53,7 +53,6 @@ public class Task14 {
             );
         }
 
-        // Рассчитывает процент от суммы. Процент должен быть от 0 до 100.
         public Money percentage(BigDecimal percent,
                                 RoundingMode roundingMode) {
             Objects.requireNonNull(percent, "Процент не должен быть null");
@@ -73,9 +72,6 @@ public class Task14 {
                     result, currency, RoundingMode.UNNECESSARY);
         }
 
-        // Распределяет неотрицательную сумму пропорционально весам.
-        // Оставшиеся минимальные денежные единицы распределяются
-        // по порядку элементов, имеющих положительный вес.
         public List<Money> allocate(List<BigDecimal> weights,
                                     RoundingMode roundingMode) {
             Objects.requireNonNull(weights, "Веса не должны быть null");
@@ -122,7 +118,6 @@ public class Task14 {
             List<BigInteger> shares = new ArrayList<BigInteger>();
             BigInteger allocated = BigInteger.ZERO;
 
-// Рассчитываем предварительные доли в минимальных денежных единицах.
             for (BigDecimal weight : weights) {
                 BigDecimal quota = new BigDecimal(totalMinorUnits)
                         .multiply(weight)
